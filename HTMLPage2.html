@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <form action="/" method="post" return onsubmit="Add()">
+        <label>First Name</label>
+        <input id="FName" type="text" name="FName" value="" />
+        <br />
+        <label>Last Name</label>
+        <input id="LName" type="text" name="LName" value="" />
+        <br />
+        <label>Email</label>
+        <input id="Email" type="text" name="Email" value="" />
+        <br />
+        <input type="submit" name="myBtn" value="Click me" />
+
+    </form>
+
+    <script type="text/javascript">
+       // a = 10, b = 10;
+
+        var num1 = document.getElementById("FName")
+        var num2 = document.getElementById("LName")
+        var num3 = document.getElementById("Email")
+        num1.focus();
+
+        function Add() {
+            if (num1.value == "") {
+                alert("Enter a First Name ")
+                return false
+            } else if (num2 == "") {
+                alert("Enter a Last Name  ")
+                return false
+            } else if (num2 == "") {
+                alert("Enter a  Email ")
+                return false
+            }
+            else {
+                alert(num1.value + " \n" + num2.value + " \n" + num3.value);
+            }
+            // var sum = a + b;
+            // alert("Addition " + sum);
+        }
+
+
+
+
+
+
+
+
+      //  function minus(a, b) {
+       //     return a - b
+     //   }
+
+       // function multiple(a, b) {
+       //     return a * b
+      //  }
+
+
+
+      //  alert("Hello World we are working on JavaScript  ") ;
+      //  alert("Adiition " + Add(10, 10))
+      //  alert(" Multiplication " + multiple(10, 5))
+      //  alert(" Subtraction " + minus(10 , 5))
+
+    </script>
+</body>
+</html>
